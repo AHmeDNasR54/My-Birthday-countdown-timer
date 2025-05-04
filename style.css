@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e91e1e, #0043fe);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  text-align: center;
+  background: rgba(0, 0, 0, 57%);
+  padding: 40px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.time-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px 10px;
+  border-radius: 10px;
+  min-width: 70px;
+  flex: 1 1 100px;
+}
+
+.time-box span {
+  font-size: 2rem;
+  display: block;
+}
+
+.time-box p {
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+#expired-message {
+  font-size: 1.1rem;
+  color: #ffdf00;
+  margin-top: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .time-box span {
+    font-size: 1.5rem;
+  }
+
+  .time-box p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .time-box {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  #expired-message {
+    font-size: 1rem;
+  }
+}
